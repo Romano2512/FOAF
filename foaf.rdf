@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:foaf="http://xmlns.com/foaf/0.1/">
+
+  <foaf:Person rdf:about="#person1">
+    <foaf:name>Romain Coste</foaf:name>
+    <foaf:mbox rdf:resource="mailto:romain.coste@etu.univ-lr.fr"/>
+    <foaf:homepage rdf:resource="http://www.example.com/romaincoste"/>
+    <foaf:gender>male</foaf:gender>
+    <foaf:birthDate>25-09-1998</foaf:birthDate>
+    <foaf:based_near rdf:resource="#location1"/>
+  </foaf:Person>
+
+  <foaf:Person rdf:about="#person2">
+    <foaf:name>Baptiste Lemonnier</foaf:name>
+    <foaf:mbox rdf:resource="mailto:baptiste.lemonnier@etu.univ-lr.fr"/>
+    <foaf:homepage rdf:resource="http://www.example.com/baptistelemonnier"/>
+    <foaf:gender>male</foaf:gender>
+    <foaf:birthDate>1985-03-20</foaf:birthDate>
+    <foaf:based_near rdf:resource="#location2"/>
+  </foaf:Person>
+
+  <foaf:knows>
+    <foaf:Person rdf:resource="#person2"/>
+  </foaf:knows>
+
+  <foaf:Location rdf:about="#location1">
+    <foaf:address>La Rochelle</foaf:address>
+  </foaf:Location>
+
+  <foaf:Location rdf:about="#location2">
+    <foaf:address>La Rochelle</foaf:address>
+  </foaf:Location>
+
+</rdf:RDF>
