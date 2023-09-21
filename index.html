@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Page d'accueil FOAF</title>
+  <link rel="foaf" href="foaf.rdf"/>
+</head>
+<body>
+
+<h1>Amis FOAF</h1>
+
+<!-- Romain Coste -->
+<h2>Romain Coste</h2>
+<p>Nom : <span property="foaf:name" resource="#person1"></span></p>
+<p>Adresse e-mail : <a href="mailto:romain.coste@etu.univ-lr.fr" property="foaf:mbox">romain.coste@etu.univ-lr.fr</a></p>
+<p>Page d'accueil : <a href="http://www.example.com/romaincoste" property="foaf:homepage" resource="#person1">http://www.example.com/romaincoste</a></p>
+<p>Genre : <span property="foaf:gender" content="male"></span></p>
+<p>Date de naissance : <span property="foaf:birthDate">25-09-1998</span></p>
+<p>Localisation : <span property="foaf:based_near" resource="#location1"></span></p>
+
+<!-- Baptiste Lemonnier -->
+<h2>Baptiste Lemonnier</h2>
+<p>Nom : <span property="foaf:name" resource="#person2"></span></p>
+<p>Adresse e-mail : <a href="mailto:baptiste.lemonnier@etu.univ-lr.fr" property="foaf:mbox">baptiste.lemonnier@etu.univ-lr.fr</a></p>
+<p>Page d'accueil : <a href="http://www.example.com/baptistelemonnier" property="foaf:homepage" resource="#person2">http://www.example.com/baptistelemonnier</a></p>
+<p>Genre : <span property="foaf:gender" content="male"></span></p>
+<p>Date de naissance : <span property="foaf:birthDate">1985-03-20</span></p>
+<p>Localisation : <span property="foaf:based_near" resource="#location2"></span></p>
+
+<!-- Localisations -->
+<h2>Localisations</h2>
+<!-- Location 1 -->
+<p>Localisation 1 : <span property="foaf:address" resource="#location1"></span></p>
+<!-- Location 2 -->
+<p>Localisation 2 : <span property="foaf:address" resource="#location2"></span></p>
+
+</body>
+</html>
